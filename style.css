@@ -1,0 +1,478 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Manrope";
+  }
+ul{
+    display: flex;
+}
+li{
+    list-style: none;
+    margin-right: 100px;
+    color: white;
+    font-size: larger;
+    font-weight: 500;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px 0px;
+}
+Header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./Assest/Photos/mainBackground.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 125vh;
+    position: relative;
+    z-index: 1;
+}
+body{
+    background-color: rgb(246,248,250);
+}
+hr{
+    margin: 0px 100px;
+}
+.navmain{
+    position: absolute;
+    left: 150px;
+    top: 180px;
+}
+.navmain h1{
+    font-size: 80px;
+    font-weight: 600;
+    color: white;
+}
+.navmain p{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+}
+Header button{
+    position: absolute;
+    left: 5px;
+    top: 280px;
+    background-color: rgb(102,99,233);
+    height: 50px;
+    width: 180px;
+    font-size: 20px;
+    font-weight: 550;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+
+/* sub section */
+.sub{
+    display: flex;
+    height: 150px;
+    width: 170vh;
+    border: none;
+    border-radius: 18px;
+    position: absolute;
+    background-color: rgb(255,255,255);
+    left: 125px;
+    top: 840px;
+    z-index: 2;
+}
+section img{
+    margin: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* main section  */
+.premain{
+    margin: 80px;
+}
+.premain h1{
+    text-align: center;
+    color: black;
+    font-size: 60px;
+    font-weight: 800;
+}
+
+/* Sell propertys Cards  */
+/* img box  */
+.cards img{
+    margin-bottom: -120px;
+    z-index: 1;
+    border: none;
+    border-radius: 20px;
+    height: 50vh;
+    width: 45vh;
+    display: inline-grid;
+}
+
+.details h2{
+    font-size: 25px;
+    margin-top: 12px;
+    font-weight: 530;
+    margin-left: 20px;
+    color: black;
+}
+.details p{
+    color: rgb(102,99,233);
+    font-size: 25px;
+    font-weight: 550;
+    margin-top: 12px;
+    margin-left: 20px;
+}
+.btn button{
+    background-color:rgb(102,99,233);
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+    height: 8vh;
+    width: 14vh;
+    z-index: 3;
+    font-size: 2.5vh ;
+    font-weight: 550;
+   
+}
+
+.details{
+    display: inline-grid;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    height: 15vh;
+    width: 40vh;
+    margin-top: 30px;
+    margin-left: 70px;
+    z-index: 2;
+    
+}
+.btn{
+    display: inline;
+    margin-left: -120px;
+}
+/* Display grid  */
+.mainsec{
+    border: none;
+    display: inline-grid;
+    grid-template-areas:
+    'card-top card-top card-top card-top'
+    'card-second card-second card-second card-second'
+    'card-third card-third card-third card-third';
+    grid-gap: 20px;
+}
+
+.card-top{
+    margin-left: 30px;
+    grid-area: card-top;
+    display: inline-grid;
+    border: none;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-gap: 20px;
+    z-index: 1;
+
+}
+.card-second{
+    margin-left: 30px;
+    grid-area: card-second;
+    display: inline-grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-gap: 20px;
+    border: none;
+    z-index: 1;
+}
+.card-third{
+    margin-left: 30px;
+    grid-area: card-third;
+    display: inline-grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-gap: 20px;
+    border: none;
+    z-index: 1;
+}
+
+/* margin for cards alignment  */
+.card-top div:nth-child(2){
+    margin-top: 45px;
+}
+.card-top div:nth-child(3){
+    margin-top: 90px;
+}
+.card-second div:nth-child(1){
+    margin-top: 100px;
+}
+.card-second div:nth-child(2){
+    margin-top: 50px;
+}
+.card-third div:nth-child(2){
+    margin-top: 45px;
+}
+.card-third div:nth-child(3){
+    margin-top: 90px;
+}
+
+/* main section two   */
+.main2{
+    display: inline-grid;
+    grid-template-areas: 
+    'img img mdiv1 mdiv1'
+    'img img mdiv1 mdiv1';
+    grid-template-columns: 2fr 2fr 2fr 1.5fr;
+    grid-gap: 20px;
+    margin-top: 150px;
+}
+.mdiv img{
+    grid-area: img;
+    z-index: 1;
+    border: none;
+    border-radius: 20px;
+    height: 65vh;
+    width: 65vh;
+}
+.mdiv img:nth-child(1){
+    position: absolute;
+    left: -50px;
+}
+.mdiv img:nth-child(2){
+    height: 50vh;
+    width: 55vh;
+    position: absolute;
+    left: 40px;
+    bottom: -2850px;
+}
+.mdiv1{
+    margin: 40px 20px;
+    grid-area: mdiv1;
+}
+.mdiv1 h1{
+    margin-top:20px;
+    font-size: 70px;
+    font-weight: 900;
+}
+.mdiv p{
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 40px;
+
+}
+.mdiv1 button{
+    margin-top: 40px;
+    background-color: rgb(102,99,233);
+    border: none;
+    border-radius: 20px;
+    height: 50px;
+    width: 180px;
+    color: white;
+    font-size: larger;
+    font-weight: 450;
+}
+
+/* main section three  */
+
+.main3{
+    display: inline-grid;
+    grid-template-areas: 
+    'mdiv3 mdiv3 img img'
+    'mdiv3 mdiv3 img img';
+    grid-template-columns: 2fr 2fr 2fr 1.5fr;
+    grid-gap: 20px;
+    margin-top: 150px;
+
+}
+.mmdiv img{
+    grid-area: img;
+    z-index: 1;
+    border: none;
+    border-radius: 20px;
+    height: 65vh;
+    width: 65vh;
+}
+.mmdiv img:nth-child(1){
+    position: absolute;
+    right: -80px;
+}
+.mmdiv img:nth-child(2){
+    height: 50vh;
+    width: 55vh;
+    position: absolute;
+    right: 70px;
+    bottom: -3420px;
+}
+.mdiv3{
+    margin: 40px 80px;
+    grid-area: mdiv3;
+}
+.mdiv3 h1{
+    margin-top:20px;
+    font-size: 70px;
+    font-weight: 900;
+}
+.mdiv3 p{
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 40px;
+
+}
+.mdiv3 button{
+    margin-top: 40px;
+    background-color: rgb(102,99,233);
+    border: none;
+    border-radius: 20px;
+    height: 50px;
+    width: 180px;
+    color: white;
+    font-size: larger;
+    font-weight: 450;
+}
+
+/* last section  */
+.lastsec{
+    background-color: rgb(102,99,233);
+    border: none;
+    border-radius: 30px;
+    margin:80px;
+}
+.lastsec h1{
+    color: white;
+    font-size: 50px;
+    font-weight: 900;
+    margin-top: 150px;
+    text-align: center;
+}
+.lastsec p{
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 20px 10px;
+    text-align: center;
+}
+.box{
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+fieldset{
+    grid-area: fieldset;
+    display: inline-grid;
+    height: 50px;
+    width: 450px;
+    border-radius: 20px;
+    background-color: rgb(86,84,209);
+    align-items: center;
+    margin-left: 350px;
+    margin-right: auto;
+}
+fieldset img{
+    margin-top: 10px;
+    margin-right: 20px;
+}
+label{
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+input{
+    color: grey;
+    background-color: transparent;
+    margin-top: -125px;
+    margin-left: 90px;
+    border: none;
+    border-radius: 20px;
+    height: 30px;
+    width: 250px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.box button{
+    grid-area: btn;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    height: 50px;
+    width: 180px;
+    color:rgb(102,99,233);
+    font-size: 30px;
+    font-weight: 450;
+    margin: 30px;
+}
+/* footer of the page  */
+footer{
+    margin: 80px;
+    display: inline-grid;
+    grid-template-areas: 
+    'fl fr'
+    'fl fr';
+    grid-gap: 200px;
+    
+}
+/* footer left side  */
+.footleft{
+    display: inline-grid;
+    margin-right: 250px;
+}
+#fl{
+    grid-area: fl;
+}
+.logos{
+    margin-top: 30px;
+}
+.logos img{
+    margin-right: 20px;
+}
+.para{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* footer right side */
+.footright{
+    display: inline-grid;
+    grid-template-areas: 
+    'ln ct ls'
+    'ln ct ls';
+    grid-gap: 80px;
+}
+#fr{
+    grid-area: fr;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    font-weight: 600;
+}
+li{
+    font-size: larger;
+    font-weight: 300;
+    margin: 15px;
+}
+.location ul{
+    display: inline-grid;
+    grid-area: ln;
+    color: black;
+    list-style: none;
+}
+
+.Contact ul{
+    display: inline-grid;
+    grid-area: ct;
+    color: black;
+    list-style: none;
+}
+.Legals ul{
+    display: inline-grid;
+    grid-area: ls;
+    color: black;
+    list-style: none;
+}
+.footright li{
+    color: black;
+    list-style: none;
+}
+
+
+
